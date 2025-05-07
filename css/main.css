@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.header__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin: 15px;
+}
+.header__top--btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.header__midele{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__input{
+    margin: 20px;
+    background: url(../image/Vector.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    padding: 15px 80px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.header__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+.header__links:hover{
+    text-decoration: underline;
+    opacity: 80%;
+}
+.header__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 10px;
+}
+.home{
+    margin: 20px 0;
+}
+.home__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
