@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,11 @@
     transition: all 0.3s linear;
 }
 .container{
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
+}
+body{
+      font-family: "Poppins", sans-serif;
 }
 .header__top{
     display: flex;
@@ -60,12 +64,131 @@
     cursor: pointer;
     gap: 10px;
 }
+/* Home section styles */
 .home{
-    margin: 20px 0;
+    margin: 40px 0;
 }
 .home__wrapper{
     display: flex;
     align-items: center;
+}
+.home__left--title{
+    font-size: 96px;
+    font-weight: 300;
+    line-height: 100px;
+    letter-spacing: 0%;
+    max-width: 600px;
+}
+.home__left--span{
+    color: #FFAE5D;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 100px;
+}
+.home__right{
+    margin: 40px;
+    align-items: center;
+}
+   
+.home__right--title{
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+    line-height: 100%;
+    border-bottom: 4px dashed #FFAE5D;
+}
+/* .home__cards{      
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(2 auto) ;
+}
+.home__card {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    
+    align-items: center;
+    gap: 5px;
+}
+
+.home__card--image{
+    width: 235px;
+    height: 235px;
+}
+.home__prices{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home__card--sele{
+    color: #FF3232;
+} 
+ */
+ .home__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 ustun */
+  grid-template-rows: repeat(2, auto);   /* 2 qator */
+  gap: 20px; /* kartalar orasidagi masofa */
+  padding: 20px;
+  margin: 10px 0 10px 0;
+}
+
+.home__card {
+  width: 256px;
+  height: 337px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.home__card:hover {
+  transform: translateY(-5px);
+}
+
+.home__card--image {
+  width: 200px;
+  height: 200px;
+}
+
+.home__card--title {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #000;
+}
+
+/* .price-discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+} */
+.home__prices{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home__card--price {
+  font-weight: 400;
+  line-height: 100%;
+  color: #000;
+  font-size: 14px;
+}
+.home__card--text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 10px 0 10px 0;
+}
+.home__card--sele {
+  color: #FF3232;
+  font-weight: 400;
+  line-height: 100%;
+  font-size: 14px;
 }
