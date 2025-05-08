@@ -101,6 +101,9 @@ body{
     border-bottom: 4px dashed #FFAE5D;
     padding: 10px;
 }
+.prop{
+    max-width: 1440px;
+}
 /* .home__cards{      
     display: flex;
     flex-wrap: wrap;
@@ -224,5 +227,14 @@ body{
     justify-content: space-between;
     gap: 7px;
 }
-
+.searched__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.searched__bottom--card{
+    width: 235px;
+    height: 235px;
+}
 /* things section style ends */
