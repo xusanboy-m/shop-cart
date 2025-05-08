@@ -90,12 +90,15 @@ body{
     align-items: center;
 }
    
-.home__right--title{
+.home__right--title,
+.things__top--title{
+    margin-bottom: 30px;
     font-size: 24px;
     color: #000;
     font-weight: 600;
     line-height: 100%;
     border-bottom: 4px dashed #FFAE5D;
+    padding: 10px;
 }
 /* .home__cards{      
     display: flex;
@@ -137,7 +140,8 @@ body{
   margin: 10px 0 10px 0;
 }
 
-.home__card {
+.home__card,
+.things__card {
   width: 256px;
   height: 337px;
   background: white;
@@ -146,18 +150,22 @@ body{
   padding: 10px;
   text-align: center;
   transition: transform 0.2s ease;
+  align-items: center;
 }
 
-.home__card:hover {
+.home__card:hover,
+.things__card:hover {
   transform: translateY(-5px);
 }
 
-.home__card--image {
+.home__card--image,
+.things__card--image {
   width: 200px;
   height: 200px;
 }
 
-.home__card--title {
+.home__card--title,
+.things__card--title {
   font-size: 14px;
   margin: 10px 0;
   color: #000;
@@ -169,13 +177,23 @@ body{
   align-items: center;
   margin-top: 5px;
 } */
-.home__prices{
+ /*  
+.home__card--image,
+.things__card--image{
+    width: 235px;
+    height: 235px;
+}
+*/
+.home__prices,
+.things__prices{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.home__card--price {
+.home__card--price,
+.things__card--price {
   font-weight: 400;
+  margin: 10px 0 10px 0;
   line-height: 100%;
   color: #000;
   font-size: 14px;
@@ -186,9 +204,24 @@ body{
     line-height: 100%;
     margin: 10px 0 10px 0;
 }
-.home__card--sele {
+.home__card--sele,
+.things__card--sele{
   color: #FF3232;
   font-weight: 400;
   line-height: 100%;
   font-size: 14px;
 }
+/* things section style */
+.things__wrapper{
+    padding: 25px;
+    margin: 20px;
+    align-items: center;
+}
+.things__bottom--cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+/* things section style ends */
